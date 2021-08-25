@@ -10,6 +10,7 @@ function App() {
       </header>
       <div className="App-body">
         <p>ここに猫が入ります。</p>
+        <img src="https://cataas.com/cat"/>
       </div>
     </div>
   );
