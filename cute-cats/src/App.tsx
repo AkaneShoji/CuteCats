@@ -1,19 +1,20 @@
-import React from 'react';
-import './App.css';
-
+import React from 'react'
+import Cat from './Cat'
+import './App.css'
 function App() {
+  const numbers = Array.from(new Array(10)).map((v,i) => i)
+  const listItems = numbers.map(() =>
+    <Cat uniqueNum={Math.random()} />
+  )
+
   return (
     <div>
-      <header className="App-header">
-        
-        <p>Catstagram</p>  
+      <header className="App-header"> 
+        <p>Catstagram</p>
       </header>
-      <div className="App-body">
-        <p>ここに猫が入ります。</p>
-        <img src="https://cataas.com/cat"/>
-      </div>
+      {listItems}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
