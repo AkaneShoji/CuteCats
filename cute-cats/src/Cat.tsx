@@ -27,7 +27,7 @@ function Cat(props: Props) {
     const useStyles = makeStyles((theme: Theme) =>
         createStyles({
           root: {
-            maxWidth: 480,
+            maxWidth: 600,
           },
           media: {
             height: 0,
@@ -46,7 +46,7 @@ function Cat(props: Props) {
     const color = props.color === undefined ? 'white' : props.color
 
     
-  const url = `https://cataas.com/cat/says/${text}?s=${fontSize}&c=${color}&uniqueNum=${props.uniqueNum}`
+  const url = ``
 
   return (
     <div>
