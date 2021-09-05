@@ -16,10 +16,10 @@ import ShareIcon from '@material-ui/icons/Share';
 import './App.css'
 
 type Props = {
-    text?: string,
-    fontSize?: string,
-    color?: string,
-    uniqueNum: number
+    //text?: string,
+    //fontSize?: string,
+    //color?: string,
+    //uniqueNum: number
 }
 
 function Cat(props: Props) {
@@ -41,12 +41,12 @@ function Cat(props: Props) {
 
   const classes = useStyles()
 
-    const text = props.text === undefined ? `%20` : props.text
-    const fontSize = props.fontSize === undefined ? '50' : props.fontSize
-    const color = props.color === undefined ? 'white' : props.color
+    //onst text = props.text === undefined ? `%20` : props.text
+    //const fontSize = props.fontSize === undefined ? '50' : props.fontSize
+    //const color = props.color === undefined ? 'white' : props.color
 
-    
-  const url = ``
+  const imageNumber = (Math.floor(Math.random() * 8)) + 1  
+  const url = `${process.env.PUBLIC_URL}/image/cat00${imageNumber}.jpg`
 
   return (
     <div>
@@ -69,7 +69,7 @@ function Cat(props: Props) {
 
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          めちゃくちゃかわいいねこ
+            めちゃくちゃかわいいねこ
         </Typography>
       </CardContent>
         

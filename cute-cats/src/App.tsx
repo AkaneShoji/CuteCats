@@ -5,9 +5,9 @@ import Grid from '@material-ui/core/Grid'
 import './App.css'
 
 function App() {
-  const numbers = Array.from(new Array(2)).map((v,i) => i)
+  const numbers = Array.from(new Array(2)).map((v, i) => i)
   const listItems = numbers.map(() =>
-    <Cat uniqueNum={Math.random()} />
+    <Cat />
   )
 
   return (
