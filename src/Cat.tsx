@@ -45,8 +45,8 @@ function Cat(props: Props) {
     //const fontSize = props.fontSize === undefined ? '50' : props.fontSize
     //const color = props.color === undefined ? 'white' : props.color
 
-  const imageNumber = (Math.floor(Math.random() * 8)) + 1  
-  const url = `${process.env.PUBLIC_URL}/image/cat00${imageNumber}.jpg`
+  const imageNumber = (Math.floor(Math.random() * 9))  
+  const url = `${process.env.PUBLIC_URL}/image/cat01${imageNumber}.jpg`
 
   return (
     <div>
