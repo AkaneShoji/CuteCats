@@ -8,6 +8,7 @@ Whatグリッドレイアウト
 Why how
 
 What   レスポンシブデザイン　何のために　何をしているの
-
+https://qiita.com/atsuk0r0/items/111d2a1bc0d1d51a793d
 What コンポーネント
+→関数であり、viewのパーツ
 --
