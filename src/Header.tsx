@@ -71,6 +71,7 @@ function Header() {
                       </div>
                       <InputBase
                           placeholder="検索"
+                          
                           classes={{
                               root: classes.inputRoot,
                               input: classes.inputInput,
