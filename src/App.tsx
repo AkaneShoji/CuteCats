@@ -3,8 +3,6 @@ import {createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import Header from './Header'
 import Cat from './Cat'
 import Grid from '@material-ui/core/Grid'
-import Box from '@material-ui/core/Box'
-import Container from '@material-ui/core/Container'
 import './App.css'
 
 
@@ -28,15 +26,12 @@ function App() {
   return (     
       <div className={classes.root}>
           <Header />
-          <Container>
-              <Box my={2}>
-                  <Grid container alignItems="center" justify="center">
-                      <Grid item md={4}>
-                          {listItems}
-                      </Grid>
+              <Grid container alignItems="center" justify="center">
+                  <Grid item md={6}>
+                      {listItems}
                   </Grid>
-              </Box>
-          </Container>
+              </Grid>
+
         </div>
     )
 }
